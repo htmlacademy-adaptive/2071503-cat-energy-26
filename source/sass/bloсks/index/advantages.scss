@@ -4,6 +4,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .advantages__main-title {
   font-size: 36px;
   line-height: 1.2;
@@ -18,5 +19,32 @@
 }
 
 .advantages__text {
-  
+  font-size: 14px;
+  line-height: 1.3;
+  color: #444444;
 }
+
+.advantages__item {
+  margin-bottom: 20px;
+}
+
+.advantages__item--benefit::before {
+  content: url("../../../img/icons/benefit-icon.svg");
+  display: inline-block;
+}
+
+.advantages__item--convenience::before {
+  content: url("../../../img/icons/convenience-icon.svg");
+  display: inline-block;
+}
+
+.advantages__item--functionality::before {
+  content: url("../../../img/icons/functionality-icon.svg");
+  display: inline-block;
+}
+
+.advantages__item--speed::before {
+  content: url("../../../img/icons/speed-icon.svg");
+  display: inline-block;
+}
+

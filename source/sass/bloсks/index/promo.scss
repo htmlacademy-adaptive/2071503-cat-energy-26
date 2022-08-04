@@ -61,15 +61,34 @@
   margin-bottom: 29px;
 }
 
+.programs-title--weight-loss::before {
+  content: url("../../../img/icons/weight-loss-cat.svg");
+  display: inline-block;
+  margin-right: 19px;
+}
+
+.programs-title--weight-gain::before {
+  content: url("../../../img/icons/weight-gain-cat.svg");
+  display: inline-block;
+  margin-right: 11px;
+}
+
 .programs-description {
   font-size: 14px;
   line-height: 1.2;
   margin: 0;
   margin-bottom: 38px;
+  color: #444444;
 }
 
 .programs-link {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.programs-link::after {
+  content: url("../../../img/icons/right-arrow-icon.svg");
+  display: inline-block;
+  margin-left: 15px;
 }

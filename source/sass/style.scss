@@ -1,7 +1,14 @@
-
-@import "./bloсks/header.scss";
-@import "./bloсks/index/promo.scss";
-@import "./bloсks/index/advantages.scss";
+// Общий стилевой файл
+@import "./bloсks/header.scss"; // Шапка сайта
+@import "./bloсks/index/promo.scss"; // Промо продукта
+@import "./bloсks/index/advantages.scss"; // Преимущества продукта
+@import "./bloсks/index/example.scss"; // Примр действия продукта
+@import "./bloсks/location.scss"; // Локация компании
+@import "./bloсks/footer.scss"; // Подвал сайта
+@import "./bloсks/form.scss"; // Форма регистрации
+@import "./bloсks/catalog/products.scss"; // Каталог продукции
+@import "./bloсks/catalog/gift.scss"; // Подарки
+@import "./bloсks/catalog/additional-products.scss"; // Дополнительные товары
 
 .visually-hidden {
   position: absolute;

@@ -1,0 +1,91 @@
+//Форма сайта
+
+.form__wrapper {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-title {
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.form__description {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 39px;
+  text-transform: uppercase;
+}
+
+.form__group {
+  border: none;
+  padding: 0;
+}
+
+.form__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lable {
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.legend {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.form__item--pet {
+  margin-bottom: 12px;
+}
+
+.form__item--programs {
+  margin-bottom: 13px;
+}
+
+.form__item--owner {
+  margin-bottom: 14px;
+}
+
+.form__comments {
+  resize: none;
+  border: 1px solid #e7e7e7;
+  width: 280px;
+  min-height: 150px;
+  margin-bottom: 23px;
+}
+
+.form__item--additionally {
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.form__item--additionally:last-child {
+  margin-bottom: 34px;
+}
+
+.btn-submit {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68b738;
+  border: none;
+}
+
+.form__legend {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
