@@ -5,8 +5,8 @@
   margin-right: auto;
 }
 
-.wrapper__img-cat {
-  background-image: url("../../../img/promo-img-cat.jpg");
+.promo__wrapper-background {
+  background-image: url("../img/promo-img-cat.jpg");
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -62,13 +62,13 @@
 }
 
 .programs-title--weight-loss::before {
-  content: url("../../../img/icons/weight-loss-cat.svg");
+  content: url("../img/icons/weight-loss-cat.svg");
   display: inline-block;
   margin-right: 19px;
 }
 
 .programs-title--weight-gain::before {
-  content: url("../../../img/icons/weight-gain-cat.svg");
+  content: url("../img/icons/weight-gain-cat.svg");
   display: inline-block;
   margin-right: 11px;
 }
@@ -88,7 +88,7 @@
 }
 
 .programs-link::after {
-  content: url("../../../img/icons/right-arrow-icon.svg");
+  content: url("../img/icons/right-arrow-icon.svg");
   display: inline-block;
   margin-left: 15px;
 }
