@@ -1,23 +1,13 @@
 // Общий стилевой файл
+@import "./bloсks/fonts.scss"; // Шрифт
+@import "./bloсks/visually-hidden.scss"; // visually-hidden
 @import "./bloсks/header.scss"; // Шапка сайта
-@import "./bloсks/index/promo.scss"; // Промо продукта
-@import "./bloсks/index/advantages.scss"; // Преимущества продукта
-@import "./bloсks/index/example.scss"; // Примр действия продукта
+@import "./bloсks/promo.scss"; // Промо продукта
+@import "./bloсks/advantages.scss"; // Преимущества продукта
+@import "./bloсks/example.scss"; // Примр действия продукта
 @import "./bloсks/location.scss"; // Локация компании
 @import "./bloсks/footer.scss"; // Подвал сайта
 @import "./bloсks/form.scss"; // Форма регистрации
-@import "./bloсks/catalog/products.scss"; // Каталог продукции
-@import "./bloсks/catalog/gift.scss"; // Подарки
-@import "./bloсks/catalog/additional-products.scss"; // Дополнительные товары
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+@import "./bloсks/products.scss"; // Каталог продукции
+@import "./bloсks/gift.scss"; // Подарки
+@import "./bloсks/additional-products.scss"; // Дополнительные товары
