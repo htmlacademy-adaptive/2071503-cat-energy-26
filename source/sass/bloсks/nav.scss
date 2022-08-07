@@ -1,0 +1,46 @@
+// навигация шапки сайта
+$oswald-font: "Oswald", sans-serif;
+
+.nav {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__toggle {
+  border: none;
+  padding: 15px;
+  background-image: url("../img/icons/nav__toggle-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.nav__logo {
+  margin-right: 51px;
+}
+
+.nav__logo-img {
+  padding: 5px;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  font-family: $oswald-font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav__item {
+  margin-bottom: 46px;
+}

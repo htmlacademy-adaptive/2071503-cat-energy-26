@@ -1,7 +1,7 @@
 // Общий стилевой файл
-@import "./bloсks/fonts.scss"; // Шрифт
+@import "./fonts.scss"; // Шрифт
 @import "./bloсks/visually-hidden.scss"; // visually-hidden
-@import "./bloсks/header.scss"; // Шапка сайта
+@import "./bloсks/nav.scss"; // навигация шапки сайта
 @import "./bloсks/promo.scss"; // Промо продукта
 @import "./bloсks/advantages.scss"; // Преимущества продукта
 @import "./bloсks/example.scss"; // Примр действия продукта
@@ -11,3 +11,5 @@
 @import "./bloсks/products.scss"; // Каталог продукции
 @import "./bloсks/gift.scss"; // Подарки
 @import "./bloсks/additional-products.scss"; // Дополнительные товары
+@import "./bloсks/header.scss"; // Шапка сайта
+@import "./bloсks/logo-cat-energy.scss"; // Письменный логотип Cat Energy

@@ -1,4 +1,7 @@
 // Локация компании
+$oswald-font: "Oswald", sans-serif;
+$arial-font: "Arial", "Helvetica", sans-serif;
+
 .location__wrapper {
   width: 320px;
   margin-left: auto;
@@ -10,7 +13,7 @@
 }
 
 .location__text {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   margin: 0;
@@ -18,7 +21,7 @@
 }
 
 .location__address {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $arial-font;
   font-size: 14px;
   line-height: 1.4;
   color: #444444;
