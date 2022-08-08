@@ -14,11 +14,10 @@
   <!-- Шапка страницы -->
   <header class="header">
     <nav class="nav">
-      <a class="nav__logo" href="">
-        <img class="nav__logo-img" src="img/logo-img/logo-image.svg" width="33" height="38" alt="Изображение логотипа"></a>
-      <a class="logo-cat-energy" href=""><img src="img/logo-img/logo-text.svg" width="101" height="18"
-          alt="Cat Energy"></a>
-      <div class="nav__menu-group">
+      <a class="header__logo logo" href="">
+        <img src="img/logo-img/logo-image.svg" width="33" height="38" alt="Изображение логотипа"></a>
+      <a class="header__logo logo" href="">
+        <img src="img/logo-img/logo-text.svg" width="101" height="18" alt="Cat Energy"></a>
         <button class="nav__toggle" type="button"><span class="visually-hidden">Меню
             навигации</span></button>
         <ul class="nav__list ">
@@ -26,7 +25,6 @@
           <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог продукции</a></li>
           <li class="nav__item"><a class="nav__link nav__link-current" href="#">Подбор программы</a></li>
         </ul>
-      </div>
     </nav>
   </header>
   <!-- Основное содержание страницы -->
@@ -44,17 +42,17 @@
 
             <ul class="form__list form__list--pet">
               <li class="form__item form__item--pet">
-                <label class="form__lable" for="name-cat">Имя:*</label>
+                <label class="form__label" for="name-cat">Имя:*</label>
                 <input class="form__input" type="text" name="name" id="name-cat" placeholder="БАРСИК">
               </li>
 
               <li class="form__item form__item--pet">
-                <label class="form__lable" for="weight-cat">Вес (кг):*</label>
+                <label class="form__label" for="weight-cat">Вес (кг):*</label>
                 <input class="form__input" type="text" name="weight" id="weight-cat" placeholder="7">
               </li>
 
               <li class="form__item form__item--pet">
-                <label class="form__lable" for="age-cat">Возраст (лет):</label>
+                <label class="form__label" for="age-cat">Возраст (лет):</label>
                 <input class="form__input" type="text" name="age" id="age-cat" placeholder="7">
               </li>
             </ul>
@@ -67,17 +65,17 @@
               <li class="form__item form__item--programs">
                 <input class="form__input visually-hidden" type="radio" name="programs" id="losing-weight"
                   checked>
-                <label class="form__lable" for="losing-weight">Похудение</label>
+                <label class="form__label" for="losing-weight">Похудение</label>
               </li>
 
               <li class="form__item form__item--programs">
                 <input class="form__input visually-hidden" type="radio" name="programs" id="weight-gain">
-                <label class="form__lable" for="weight-gain">Набор массы</label>
+                <label class="form__label" for="weight-gain">Набор массы</label>
               </li>
 
               <li class="form__item form__item--programs">
                 <input class="form__input visually-hidden" type="radio" name="programs" id="don't-know">
-                <label class="form__lable" for="don't-know">Не знаю (Нужен ваш совет)</label>
+                <label class="form__label" for="don't-know">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -87,12 +85,12 @@
 
             <ul class="form__list form__list--owner">
               <li class="form__item form__item--owner">
-                <label class="form__lable" for="email">E-mail:*</label>
+                <label class="form__label" for="email">E-mail:*</label>
                 <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
               </li>
 
               <li class="form__item form__item--owner">
-                <label class="form__lable" for="tel">Телефон:*</label>
+                <label class="form__label" for="tel">Телефон:*</label>
                 <input class="form__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
@@ -112,22 +110,22 @@
               <li class="form__item form__item--additionally">
                   <input class="form__input visually-hidden" type="checkbox" name="sweetener" id="sweetener"
                     checked>
-                  <label class="form__lable form__lable--additionally"" for="sweetener">Сахарозаменитель</label>
+                  <label class="form__label form__label--additionally" for="sweetener">Сахарозаменитель</label>
              </li>
 
              <li class="form__item form__item--additionally">
                  <input class="form__input visually-hidden" type="checkbox" name="water" id="water">
-                 <label class="form__lable form__lable--additionally" for="water">Питьевая вода</label>
+                 <label class="form__label form__label--additionally" for="water">Питьевая вода</label>
              </li>
 
              <li class="form__item form__item--additionally">
                  <input class="form__input visually-hidden" type="checkbox" name="milk" id="milk">
-                  <label class="form__lable form__lable--additionally"" for="milk">Молоко</label>
+                  <label class="form__label form__label--additionally" for="milk">Молоко</label>
               </li>
 
              <li class="form__item form__item--additionally">
                  <input class="form__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-                  <label class="form__lable form__lable--additionally"" for="vitamins">Витамины</label>
+                  <label class="form__label form__label--additionally" for="vitamins">Витамины</label>
              </li>
             </ul>
          </fieldset>
@@ -155,7 +153,7 @@
   <!-- Подвал страницы -->
   <footer class="footer">
     <div class="footer__wrapper">
-      <a class="logo-cat-energyt" href=""><img src="../source/img/logo-img/logo-text.svg" width="128" height="24"
+      <a class="footer__logo logo" href=""><img src="../source/img/logo-img/logo-text.svg" width="128" height="24"
           alt="Cat Energy логотип"></a>
       <ul class="footer__list">
         <li class="footer__item">

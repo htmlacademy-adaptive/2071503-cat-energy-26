@@ -39,14 +39,6 @@
   cursor: pointer;
 }
 
-.nav__logo {
-  margin-right: 51px;
-}
-
-.nav__logo-img {
-  padding: 5px;
-}
-
 .nav__list {
   list-style: none;
   margin: 0;
@@ -54,7 +46,7 @@
 }
 
 .nav__link {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -96,32 +88,32 @@
 }
 */
 .promo__main-title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 36px;
   line-height: 1.2;
   font-weight: 400;
   text-align: center;
-  color: #ffffff;
+  color: var(--bright-light);
   margin-top: 27px;
   margin-bottom: 25px;
 }
 
 .promo__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
-  color: #ffffff;
+  color: var(--bright-light);
   margin: 0;
   margin-bottom: 29px;
   text-transform: uppercase;
 }
 
 .promo__programs-btn {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--bright-light);
   text-decoration: none;
   text-transform: uppercase;
   background-color: #68b738;
@@ -139,7 +131,7 @@
 }
 
 .promo__programs-title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 24px;
   line-height: 1.3;
   text-transform: uppercase;
@@ -161,16 +153,16 @@
 }
 
 .promo__programs-description {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.2;
   margin: 0;
   margin-bottom: 38px;
-  color: #444444;
+  color: var(--bright-dark);
 }
 
 .promo__programs-link {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
   color: #000000;
@@ -191,7 +183,7 @@
 }
 
 .advantages__main-title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 36px;
   line-height: 1.2;
   margin-bottom: 40px;
@@ -205,34 +197,35 @@
 }
 
 .advantages__text {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.3;
-  color: #444444;
+  color: var(--bright-dark);
 }
 
 .advantages__item {
   margin-bottom: 20px;
 }
-
-.advantages__item--benefit::before {
-  content: url("../img/icons/benefit-icon.svg");
+.advantages__item::before {
+  content: "";
   display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  background: var(--bgi) no-repeat center/contain;
+  background-color: #68b738;
 }
-
-.advantages__item--convenience::before {
-  content: url("../img/icons/convenience-icon.svg");
-  display: inline-block;
+.advantages__item--benefit {
+  --bgi: url("../img/icons/benefit-icon.svg");
 }
-
-.advantages__item--functionality::before {
-  content: url("../img/icons/functionality-icon.svg");
-  display: inline-block;
+.advantages__item--convenience {
+  --bgi: url("../img/icons/convenience-icon.svg");
 }
-
-.advantages__item--speed::before {
-  content: url("../img/icons/speed-icon.svg");
-  display: inline-block;
+.advantages__item--functionality {
+  --bgi: url("../img/icons/functionality-icon.svg");
+}
+.advantages__item--speed {
+  --bgi: url("../img/icons/speed-icon.svg");
 }
 
 .example__wrapper {
@@ -243,7 +236,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 36px;
   line-height: 1.2;
   margin: 0;
@@ -252,12 +245,12 @@
 }
 
 .example__text {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.3;
   margin: 0;
   margin-bottom: 20px;
-  color: #444444;
+  color: var(--bright-dark);
 }
 
 .example__list {
@@ -266,21 +259,21 @@
 }
 
 .example__value {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 24px;
   line-height: 1.2;
 }
 
 .example__description {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--additional-font);
   font-size: 12px;
   line-height: 1.2;
-  color: #444444;
+  color: var(--bright-dark);
   margin: 0;
 }
 
 .example__cost {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -295,7 +288,7 @@
 }
 
 .example__slider-horizontal__text {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.3;
   text-transform: uppercase;
@@ -312,7 +305,7 @@
 }
 
 .location__text {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
   margin: 0;
@@ -320,7 +313,7 @@
 }
 
 .location__address {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.4;
   color: #444444;
@@ -347,7 +340,7 @@
 }
 
 .form__main-title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 36px;
   line-height: 1.2;
   font-weight: 400;
@@ -356,7 +349,7 @@
 }
 
 .form__description {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.2;
   margin: 0;
@@ -375,20 +368,20 @@
   padding: 0;
 }
 
-.form__lable {
-  font-family: "Oswald", sans-serif;
+.form__label {
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #444444;
+  color: var(--bright-dark);
 }
 
-.form__lable--additionally {
+.form__label--additionally {
   color: #000000;
 }
 
 .form__legend {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 24px;
   line-height: 1.2;
   font-weight: 400;
@@ -408,7 +401,7 @@
 }
 
 .form__comments {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -417,7 +410,7 @@
   width: 280px;
   min-height: 150px;
   margin-bottom: 23px;
-  color: #444444;
+  color: var(--bright-dark);
 }
 
 .form__item--additionally {
@@ -430,17 +423,17 @@
 }
 
 .form__btn-submit {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--bright-light);
   text-transform: uppercase;
   background-color: #68b738;
   border: none;
 }
 
 .form__tagging {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.2;
 }
@@ -452,9 +445,10 @@
 }
 
 .products__main-title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 36px;
   line-height: 1.2;
+  font-weight: 400;
   text-align: center;
   margin: 0;
   margin-bottom: 49px;
@@ -467,21 +461,21 @@
 }
 
 .products__link-title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.3;
-  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
 }
 
 .products__title {
+  font-weight: 400;
   margin: 0;
 }
 
 .products__checklist {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--additional-font);
   margin: 0;
   font-size: 12px;
   line-height: 1.2;
@@ -492,13 +486,13 @@
 }
 
 .products__button {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.3;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--bright-light);
   background-color: #69b738;
 }
 
@@ -511,7 +505,7 @@
 }
 
 .products__show-more-text {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.3;
   text-transform: uppercase;
@@ -520,22 +514,22 @@
 }
 
 .products__show-more-postmark {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--additional-font);
   font-size: 16px;
   line-height: 1.3;
-  color: #444444;
+  color: var(--bright-dark);
   margin: 0;
   margin-bottom: 31px;
 }
 
 .products__btn-show-more {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.3;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: #444444;
+  color: var(--bright-dark);
   background-color: #f2f2f2;
 }
 
@@ -558,10 +552,10 @@
 }
 
 .gift__title {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--additional-font);
   font-size: 16px;
   line-height: 1.3;
-  color: #ffffff;
+  color: var(--bright-light);
   font-weight: 400;
   text-align: center;
   margin: 0;
@@ -580,9 +574,10 @@
 }
 
 .additional-products__main-title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 24px;
   line-height: 1.2;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 36px;
 }
@@ -594,42 +589,52 @@
 }
 
 .additional-products__title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
+  font-weight: 400;
   margin: 0;
-  text-transform: uppercase;
   margin-bottom: 13px;
+  text-transform: uppercase;
 }
 
 .additional-products__specification {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.2;
   margin-bottom: 15px;
   display: inline-block;
+  color: var(--bright-dark);
 }
 
 .additional-products__cost {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.2;
+  color: var(--bright-dark);
 }
 
 .additional-products__button {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.3;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--bright-light);
   background-color: #69b738;
   display: block;
   margin-bottom: 19px;
 }
 
-.logo-cat-energy {
-  margin-right: 65px;
+:root {
+  --main-font: "Oswald", sans-serif;
+  --additional-font: "Arial", "Helvetica", sans-serif;
+  --bright-light: #ffffff;
+  --bright-dark: #444444;
+}
+
+body {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
