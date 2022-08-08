@@ -1,6 +1,4 @@
 // Секция пример
-$oswald-font: "Oswald", sans-serif;
-$arial-font: "Arial", "Helvetica", sans-serif;
 
 .example__wrapper {
   width: 320px;
@@ -10,7 +8,7 @@ $arial-font: "Arial", "Helvetica", sans-serif;
 }
 
 .example__title {
-  font-family: $oswald-font;
+  font-family: var(--main-font);
   font-size: 36px;
   line-height: 1.2;
   margin: 0;
@@ -19,12 +17,12 @@ $arial-font: "Arial", "Helvetica", sans-serif;
 }
 
 .example__text {
-  font-family: $arial-font;
+  font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.3;
   margin: 0;
   margin-bottom: 20px;
-  color: #444444;
+  color: var(--bright-dark);
 }
 
 .example__list {
@@ -33,21 +31,21 @@ $arial-font: "Arial", "Helvetica", sans-serif;
 }
 
 .example__value {
-  font-family: $oswald-font;
+  font-family: var(--main-font);
   font-size: 24px;
   line-height: 1.2;
 }
 
 .example__description {
-  font-family: $arial-font;
+  font-family: var(--additional-font);
   font-size: 12px;
   line-height: 1.2;
-  color: #444444;
+  color: var(--bright-dark);
   margin: 0;
 }
 
 .example__cost {
-  font-family: $oswald-font;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -62,7 +60,7 @@ $arial-font: "Arial", "Helvetica", sans-serif;
 }
 
 .example__slider-horizontal__text {
-  font-family: $oswald-font;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.3;
   text-transform: uppercase;

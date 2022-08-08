@@ -1,6 +1,4 @@
 //Форма сайта
-$oswald-font: "Oswald", sans-serif;
-$arial-font: "Arial", "Helvetica", sans-serif;
 
 .form__wrapper {
   width: 320px;
@@ -9,7 +7,7 @@ $arial-font: "Arial", "Helvetica", sans-serif;
 }
 
 .form__main-title {
-  font-family: $oswald-font;
+  font-family: var(--main-font);
   font-size: 36px;
   line-height: 1.2;
   font-weight: 400;
@@ -18,7 +16,7 @@ $arial-font: "Arial", "Helvetica", sans-serif;
 }
 
 .form__description {
-  font-family: $oswald-font;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.2;
   margin: 0;
@@ -37,20 +35,20 @@ $arial-font: "Arial", "Helvetica", sans-serif;
   padding: 0;
 }
 
-.form__lable {
-  font-family: $oswald-font;
+.form__label {
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #444444;
+  color: var(--bright-dark);
 }
 
-.form__lable--additionally {
+.form__label--additionally {
   color: #000000;
 }
 
 .form__legend {
-  font-family: $oswald-font;
+  font-family: var(--main-font);
   font-size: 24px;
   line-height: 1.2;
   font-weight: 400;
@@ -70,7 +68,7 @@ $arial-font: "Arial", "Helvetica", sans-serif;
 }
 
 .form__comments {
-  font-family: $oswald-font;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -79,7 +77,7 @@ $arial-font: "Arial", "Helvetica", sans-serif;
   width: 280px;
   min-height: 150px;
   margin-bottom: 23px;
-  color: #444444;
+  color: var(--bright-dark);
 }
 
 .form__item--additionally {
@@ -92,17 +90,17 @@ $arial-font: "Arial", "Helvetica", sans-serif;
 }
 
 .form__btn-submit {
-  font-family: $oswald-font;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--bright-light);
   text-transform: uppercase;
   background-color: #68b738;
   border: none;
 }
 
 .form__tagging {
-  font-family: $arial-font;
+  font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.2;
 }
