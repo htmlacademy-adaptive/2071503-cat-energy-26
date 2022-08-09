@@ -1,0 +1,59 @@
+// Секция преимуществ
+
+.advantages__wrapper {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages__main-title {
+  font-family: var(--main-font);
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__text {
+  font-family: var(--additional-font);
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--font-color-dark);
+}
+
+.advantages__item {
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    background: var(--bgi) no-repeat center / contain;
+    background-color: var(--bright-color);
+  }
+
+  &--benefit {
+    --bgi: url("../img/icons/benefit-icon.svg");
+  }
+
+  &--convenience {
+    --bgi: url("../img/icons/convenience-icon.svg");
+  }
+
+  &--functionality {
+    --bgi: url("../img/icons/functionality-icon.svg");
+  }
+
+  &--speed {
+    --bgi: url("../img/icons/speed-icon.svg");
+  }
+}
+

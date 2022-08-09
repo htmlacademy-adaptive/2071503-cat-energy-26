@@ -1,0 +1,17 @@
+// Глобальные стили
+:root {
+  // Шрифты сайта
+  --main-font: "Oswald", sans-serif;
+  --additional-font: "Arial", "Helvetica", sans-serif;
+  // Кастомные своийства цветов сайт
+  --primary-color: #000000; // Основной цвет текста
+  --font-color-light: #ffffff; // Светлый цвет текста
+  --font-color-dark: #444444; // Темный цвет текста
+  --bright-color: #68b738; // Акцентный цвет
+  --backgroun-main-color: #f2f2f2; // Дополнительный цвет фона страницы
+}
+
+body {
+  margin: 0;
+}
+

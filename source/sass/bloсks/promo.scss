@@ -1,0 +1,121 @@
+// промо продукта
+
+.promo__wrapper {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo__wrapper-preview {
+  background-image: url("../img/light-green-background.png"),
+    url("../img/promo-img-cat.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/*
+.promo__wrapper-preview {
+  &::before {
+    content: "";
+    display: block;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image:
+      linear-gradient(
+        hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)
+      ),
+      url("../img/promo-img-cat.jpg");
+  }
+}
+*/
+
+.promo__main-title {
+  font-family: var(--main-font);
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+  color: var(--font-color-light);
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+
+.promo__slogan {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--font-color-light);
+  margin: 0;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+}
+
+.promo__programs-btn {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--font-color-light);
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--bright-color);
+}
+
+// Список программ
+.promo__programs-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.promo__programs-item {
+  background-color: var(--backgroun-main-color);
+  margin-bottom: 20px;
+}
+
+.promo__programs-title {
+  font-family: var(--main-font);
+  font-size: 24px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.promo__programs-title--weight-loss::before {
+  content: url("../img/icons/weight-loss-cat.svg");
+  display: inline-block;
+  margin-right: 19px;
+}
+
+.promo__programs-title--weight-gain::before {
+  content: url("../img/icons/weight-gain-cat.svg");
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.promo__programs-description {
+  font-family: var(--additional-font);
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 38px;
+  color: var(--font-color-dark);
+}
+
+.promo__programs-link {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--primary-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.promo__programs-link::after {
+  content: url("../img/icons/right-arrow-icon.svg");
+  display: inline-block;
+  margin-left: 15px;
+}

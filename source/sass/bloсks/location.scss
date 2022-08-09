@@ -1,0 +1,27 @@
+// Локация компании
+
+.location__wrapper {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location__wrapper--form {
+  background-color: var(--backgroun-main-color);
+}
+
+.location__text {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.location__address {
+  font-family: var(--additional-font);
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--font-color-dark);
+  margin: 0;
+}
