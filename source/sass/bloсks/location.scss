@@ -7,7 +7,7 @@
 }
 
 .location__wrapper--form {
-  background-color: #f2f2f2;
+  background-color: var(--backgroun-main-color);
 }
 
 .location__text {
@@ -22,6 +22,6 @@
   font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.4;
-  color: #444444;
+  color: var(--font-color-dark);
   margin: 0;
 }

@@ -37,14 +37,14 @@
   line-height: 1.2;
   margin-bottom: 15px;
   display: inline-block;
-  color: var(--bright-dark);
+  color: var(--font-color-dark);
 }
 
 .additional-products__cost {
   font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.2;
-  color: var(--bright-dark);
+  color: var(--font-color-dark);
 }
 
 .additional-products__button {
@@ -54,8 +54,8 @@
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--bright-light);
-  background-color: hsl(97, 53%, 47%);
+  color: var(--font-color-light);
+  background-color: var(--bright-color);
   display: block;
   margin-bottom: 19px;
 }

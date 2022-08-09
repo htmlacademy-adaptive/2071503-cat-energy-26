@@ -40,11 +40,11 @@
   font-size: 16px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: var(--bright-dark);
+  color: var(--font-color-dark);
 }
 
 .form__label--additionally {
-  color: #000000;
+  color: var(--primary-color);
 }
 
 .form__legend {
@@ -77,11 +77,11 @@
   width: 280px;
   min-height: 150px;
   margin-bottom: 23px;
-  color: var(--bright-dark);
+  color: var(--font-color-dark);
 }
 
 .form__item--additionally {
-  color: #000000;
+  color: var(--primary-color);
   margin-bottom: 12px;
 }
 
@@ -93,9 +93,9 @@
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
-  color: var(--bright-light);
+  color: var(--font-color-light);
   text-transform: uppercase;
-  background-color: #68b738;
+  background-color: var(--bright-color);
   border: none;
 }
 

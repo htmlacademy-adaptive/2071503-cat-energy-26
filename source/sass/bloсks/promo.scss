@@ -36,7 +36,7 @@
   line-height: 1.2;
   font-weight: 400;
   text-align: center;
-  color: var(--bright-light);
+  color: var(--font-color-light);
   margin-top: 27px;
   margin-bottom: 25px;
 }
@@ -46,7 +46,7 @@
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
-  color: var(--bright-light);
+  color: var(--font-color-light);
   margin: 0;
   margin-bottom: 29px;
   text-transform: uppercase;
@@ -56,10 +56,10 @@
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.2;
-  color: var(--bright-light);
+  color: var(--font-color-light);
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #68b738;
+  background-color: var(--bright-color);
 }
 
 // Список программ
@@ -70,7 +70,7 @@
 }
 
 .promo__programs-item {
-  background-color: #f2f2f2;
+  background-color: var(--backgroun-main-color);
   margin-bottom: 20px;
 }
 
@@ -102,14 +102,14 @@
   line-height: 1.2;
   margin: 0;
   margin-bottom: 38px;
-  color: var(--bright-dark);
+  color: var(--font-color-dark);
 }
 
 .promo__programs-link {
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
-  color: #000000;
+  color: var(--primary-color);
   text-decoration: none;
   text-transform: uppercase;
 }
