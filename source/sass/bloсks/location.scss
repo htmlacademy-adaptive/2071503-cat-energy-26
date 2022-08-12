@@ -1,13 +1,14 @@
 // Локация компании
-
 .location__wrapper {
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  padding: 26px 20px 26px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 139px);
+  justify-content: space-between;
 
-.location__wrapper--form {
-  background-color: var(--backgroun-main-color);
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px 56px 70px;
+    grid-template-columns: 171px 160px;
+  }
 }
 
 .location__text {
@@ -16,6 +17,10 @@
   line-height: 1.2;
   margin: 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .location__address {
@@ -24,4 +29,18 @@
   line-height: 1.4;
   color: var(--font-color-dark);
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    width: 160px;
+    text-align: end;
+  }
+}
+
+.location__img-map {
+  display: block;
+}
+
+.location--wrapper-bg {
+  background-color: #f2f2f2;
 }

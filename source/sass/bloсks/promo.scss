@@ -1,16 +1,17 @@
 // промо продукта
 
-.promo__wrapper {
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .promo__wrapper-preview {
+  display: flex;
+  flex-direction: column;
   background-image: url("../img/light-green-background.png"),
     url("../img/promo-img-cat.jpg");
   background-position: top;
   background-repeat: no-repeat;
+  background-size: 100% 302px, auto;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 /*
@@ -37,8 +38,17 @@
   font-weight: 400;
   text-align: center;
   color: var(--font-color-light);
-  margin-top: 27px;
-  margin-bottom: 25px;
+  margin: 0 15px 25px 15px;
+
+  @media (min-width: $tablet-width) {
+    color: var(--primary-color);
+    font-size: 60px;
+    line-height: 1.2;
+    margin: 0 0 41px 87px;
+    min-width: 430px;
+    text-align: start;
+    order: 1;
+  }
 }
 
 .promo__slogan {
@@ -47,9 +57,18 @@
   line-height: 1.2;
   text-align: center;
   color: var(--font-color-light);
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 0 0 29px 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: var(--primary-color);
+    font-size: 20px;
+    line-height: 1.2;
+    min-width: 430px;
+    margin: 0 0 20px 87px;
+    text-align: start;
+    order: 2;
+  }
 }
 
 .promo__programs-btn {
@@ -60,18 +79,44 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: var(--bright-color);
+  padding: 14px 26px;
+  text-align: center;
+  margin: 0 20px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 87px;
+    order: 3;
+    width: 244px;
+    box-sizing: border-box;
+  }
+}
+
+.promo__product-preview {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
 }
 
 // Список программ
 .promo__programs-list {
   list-style-type: none;
-  margin: 0;
+  margin: 0 20px 0 20px;
   padding: 0;
 }
 
 .promo__programs-item {
   background-color: var(--backgroun-main-color);
   margin-bottom: 20px;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding: 81px 62px 53px 52px;
+  }
 }
 
 .promo__programs-title {
@@ -101,8 +146,14 @@
   font-size: 14px;
   line-height: 1.2;
   margin: 0;
-  margin-bottom: 38px;
+  padding-bottom: 23px;
+  margin-bottom: 15px;
   color: var(--font-color-dark);
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .promo__programs-link {
@@ -112,6 +163,10 @@
   color: var(--primary-color);
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .promo__programs-link::after {
