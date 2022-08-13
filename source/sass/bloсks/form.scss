@@ -17,6 +17,20 @@
     font-size: 60px;
     margin-bottom: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.form__description-wrapper-center {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .form__description {
@@ -30,6 +44,17 @@
     font-size: 20px;
     margin-bottom: 66px;
     width: 325px;
+  }
+}
+
+.form__group-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -50,6 +75,10 @@
     margin: 0;
     width: 630px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 // Стили для списков
@@ -60,7 +89,16 @@
 }
 
 .form__list--pet {
-  padding-bottom: 24px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__list--programs {
@@ -69,11 +107,29 @@
   @media (min-width: $tablet-width) {
     padding: 25px 20px 12px 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 
 .form__list--owner {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 78px;
+    margin-bottom: 69px;
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .form__list--additionally {
@@ -84,6 +140,14 @@
     grid-template-columns: 282px 1fr;
     column-gap: 61px;
     margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -123,7 +187,12 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 71px;
     margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
   }
 }
 
@@ -166,6 +235,12 @@
     @media (min-width: $tablet-width) {
       font-size: 20px;
     }
+  }
+}
+
+.form__item--pet:last-child {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -217,6 +292,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     min-height: 174px;
+    margin: 0 0 65px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -237,6 +319,12 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .form__btn-submit {
@@ -255,6 +343,11 @@
   @media (min-width: $tablet-width) {
     width: 282px;
     margin-right: 61px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 586px;
+    margin-right: 81px;
   }
 }
 

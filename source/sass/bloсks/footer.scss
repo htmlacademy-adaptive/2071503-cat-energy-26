@@ -15,6 +15,12 @@
     margin-bottom: auto;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .footer__logo {

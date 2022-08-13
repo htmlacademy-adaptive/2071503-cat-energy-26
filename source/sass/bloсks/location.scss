@@ -1,4 +1,18 @@
 // Локация компании
+.location {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.location__wrapper-center {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .location__wrapper {
   padding: 26px 20px 26px 20px;
   display: grid;
@@ -8,6 +22,13 @@
   @media (min-width: $tablet-width) {
     padding: 60px 70px 56px 70px;
     grid-template-columns: 171px 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 56px 80px;
+    margin-top: 95px;
   }
 }
 

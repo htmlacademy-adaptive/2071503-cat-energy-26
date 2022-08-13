@@ -17,3 +17,15 @@
   margin: 0;
 }
 
+.global-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 20px;
+    padding-bottom: 86px;
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+

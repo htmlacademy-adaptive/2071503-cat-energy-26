@@ -5,6 +5,12 @@
   @media (min-width: $tablet-width) {
     padding-top: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .products__main-title {
@@ -16,6 +22,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
     margin-bottom: 82px;
   }
 }
@@ -30,6 +41,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
     margin: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    margin: 0;
   }
 }
 

@@ -1,6 +1,12 @@
 // Подарки
 .gift {
   margin: 35px 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: auto;
+    width: 245px;
+  }
 }
 
 .gift__wrapper-background {
@@ -15,6 +21,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 57px 124px 60px 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 43px 42px 41px;
   }
 }
 
@@ -32,6 +42,11 @@
     align-items: center;
     text-align: start;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .gift__title::before {
@@ -42,5 +57,10 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 47px;
   }
 }
