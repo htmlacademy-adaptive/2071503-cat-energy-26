@@ -26,7 +26,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    background-color: #ffffff;
+    background-color: var(--bg-color-light);
     padding: 56px 80px;
     margin-top: 95px;
   }
@@ -58,10 +58,20 @@
   }
 }
 
-.location__img-map {
+.location__map {
   display: block;
+  border: none;
 }
 
 .location--wrapper-bg {
-  background-color: #f2f2f2;
+  background-color: var(--backgroun-main-color);
+}
+
+.location__empty-space {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    height: 12px;
+  }
 }

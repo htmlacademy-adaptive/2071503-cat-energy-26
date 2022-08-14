@@ -3,7 +3,7 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
+    background-color: var(--bg-color-light);
   }
 }
 
@@ -18,7 +18,7 @@
 
 .example__wrapper-bg {
   @media (min-width: $desktop-width) {
-    background-color: #f2f2f2;
+    background-color: var(--backgroun-main-color);
   }
 }
 
@@ -30,7 +30,7 @@
     padding: 70px 0 75px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: min-content auto auto;
+    grid-template-rows: min-content min-content auto auto;
     column-gap: 220px;
   }
 }
@@ -48,9 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0;
   }
 }
 
@@ -63,6 +61,7 @@
   color: var(--font-color-dark);
 
   @media (min-width: $desktop-width) {
+    grid-row: 2/3;
     margin: 0 0 69px 0;
     width: 440px;
   }
@@ -84,7 +83,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0 0 55px 0;
-    grid-row: 2/3;
+    grid-row: 3/4;
   }
 }
 
@@ -125,7 +124,7 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
+    background-color: var(--bg-color-light);
     font-size: 14px;
     padding: 0, 5px;
     max-width: 142px;
@@ -133,7 +132,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: #f2f2f2;
+    background-color: var(--backgroun-main-color);
   }
 }
 
@@ -152,7 +151,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    grid-row: 3/4;
+    grid-row: 4/5;
     width: 366px;
     display: flex;
     justify-content: space-between;
