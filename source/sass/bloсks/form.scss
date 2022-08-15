@@ -1,9 +1,9 @@
 //Форма сайта
-
-.form__wrapper {
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+// Общие стили
+.filter {
+  padding-top: 27px;
+  margin: 0 20px;
+  margin-bottom: 32px;
 }
 
 .form__main-title {
@@ -11,28 +11,144 @@
   font-size: 36px;
   line-height: 1.2;
   font-weight: 400;
-  margin: 0;
-  margin-bottom: 37px;
+  margin: 0 0 37px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.form__description-wrapper-center {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .form__description {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.2;
-  margin: 0;
-  margin-bottom: 39px;
+  margin: 0 0 39px 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 66px;
+    width: 325px;
+  }
+}
+
+.form__group-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .form__group {
   border: none;
   padding: 0;
+  margin: 0;
 }
 
+.form__group--programs {
+  margin-left: -20px;
+  margin-right: -20px;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #e7e7e7;
+    margin: 0;
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+// Стили для списков
 .form__list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
+
+.form__list--pet {
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__list--programs {
+  padding: 22px 20px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 20px 12px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+
+.form__list--owner {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 78px;
+    margin-bottom: 69px;
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.form__list--additionally {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 282px 1fr;
+    column-gap: 61px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .form__label {
@@ -40,6 +156,14 @@
   font-size: 16px;
   line-height: 1.2;
   text-transform: uppercase;
+  color: var(--font-color-dark);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.form__input::placeholder {
   color: var(--font-color-dark);
 }
 
@@ -52,11 +176,72 @@
   font-size: 24px;
   line-height: 1.2;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+}
+
+.form__legend--owner {
+  padding-top: 26px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 71px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+  }
+}
+
+.form__legend--comments {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.form__legend--additionally {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .form__item--pet {
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  .form__label {
+    margin-right: 13px;
+  }
+
+  .form__input {
+    width: 100%;
+    font-size: 16px;
+    padding: 13px 15px 14px 15px;
+    text-transform: uppercase;
+    border: 1px solid #e7e7e7;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+  }
+}
+
+.form__item--pet:last-child {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__item--programs {
@@ -65,31 +250,85 @@
 
 .form__item--owner {
   margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  .form__label {
+    margin-right: 13px;
+  }
+
+  .form__input {
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 13px 15px 14px 15px;
+    border: 1px solid #e7e7e7;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+  }
 }
 
 .form__comments {
+  display: block;
+  width: 100%;
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
   text-transform: uppercase;
   resize: none;
   border: 1px solid #e7e7e7;
-  width: 280px;
   min-height: 150px;
-  margin-bottom: 23px;
   color: var(--font-color-dark);
+  padding: 9px 10px 9px 15px;
+  box-sizing: border-box;
+  margin: 0 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    min-height: 174px;
+    margin: 0 0 65px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .form__item--additionally {
   color: var(--primary-color);
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
-.form__item--additionally:last-child {
-  margin-bottom: 34px;
+.form__btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .form__btn-submit {
+  width: 100%;
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.2;
@@ -97,10 +336,29 @@
   text-transform: uppercase;
   background-color: var(--bright-color);
   border: none;
+  padding: 10px 44px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    margin-right: 61px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 586px;
+    margin-right: 81px;
+  }
 }
 
 .form__tagging {
   font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.2;
+  margin: 21px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    align-self: center;
+  }
 }

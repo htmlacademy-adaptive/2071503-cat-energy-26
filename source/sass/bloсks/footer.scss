@@ -1,13 +1,67 @@
 //Подвал страниц
-.footer__wrapper {
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+.footer {
   background-color: var(--backgroun-main-color);
+}
+
+.footer__wrapper {
+  margin: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    min-height: 147px;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.footer__logo {
+  text-align: center;
+  padding: 39px 0 32px 0;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .footer__list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  min-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 0 23px 0;
+}
+
+.footer__link {
+  padding: 5px;
+}
+
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0 22px 0;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.copyright__text {
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }

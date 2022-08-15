@@ -1,9 +1,52 @@
 // навигация шапки сайта
 
 .nav {
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 280px;
+
+  // Планшетная ширина экрана
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    min-width: 708px;
+    min-height: 100px;
+    padding: 0 20px 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 66px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    min-width: 175px;
+    border-bottom: none;
+  }
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__img--pic {
+  margin-right: 57px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 .nav__toggle {
@@ -12,14 +55,38 @@
   background-image: url("../img/icons/nav__toggle-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: var(--bg-color-light);
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 
 .nav__list {
+  text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+    min-width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 480px;
+  }
 }
 
 .nav__link {
@@ -30,8 +97,42 @@
   text-transform: uppercase;
   color: var(--primary-color);
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+
+    &--current {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background-color: var(--bright-color);
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
 }
 
 .nav__item {
-  margin-bottom: 46px;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 22px 0 24px 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }

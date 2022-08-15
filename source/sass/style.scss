@@ -1,7 +1,8 @@
 // Общий стилевой файл
+@import "./variables.scss"; // Перменные
 @import "./fonts.scss"; // Шрифт
 @import "./bloсks/visually-hidden.scss"; // visually-hidden
-@import "./bloсks/nav.scss"; // навигация шапки сайта
+@import "./bloсks/nav.scss"; // Навигация шапки сайта
 @import "./bloсks/promo.scss"; // Промо продукта
 @import "./bloсks/advantages.scss"; // Преимущества продукта
 @import "./bloсks/example.scss"; // Примр действия продукта
@@ -15,3 +16,4 @@
 @import "./bloсks/logo.scss"; // Письменный логотип Cat Energy
 @import "./global.scss"; // Глобальные стили
 @import "./bloсks/copyright.scss"; // Ссылка HTML Academy
+@import "./bloсks/slider.scss"; // Слайдер с котом
