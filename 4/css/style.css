@@ -132,11 +132,24 @@
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 18px;
+    padding-bottom: 10px;
   }
 }
 @media (min-width: 768px) {
   .nav__link {
     font-size: 18px;
+  }
+  .nav__link--current {
+    position: relative;
+  }
+  .nav__link--current::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: var(--bright-color);
   }
 }
 @media (min-width: 1220px) {
@@ -726,6 +739,7 @@
 .location__map {
   display: block;
   border: none;
+  width: 100%;
 }
 
 .location--wrapper-bg {
