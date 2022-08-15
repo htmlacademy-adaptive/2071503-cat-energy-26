@@ -102,10 +102,25 @@
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 18px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+
+    &--current {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background-color: var(--bright-color);
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
