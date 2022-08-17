@@ -14,9 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    @include centering;
   }
 }
 
@@ -121,9 +119,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    @include centering;
   }
 }
 
@@ -176,6 +172,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    border-bottom: none;
   }
 }
 

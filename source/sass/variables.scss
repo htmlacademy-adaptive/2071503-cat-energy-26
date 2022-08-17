@@ -3,3 +3,9 @@
 // Переменные для работы с медиавыражениями
 $tablet-width: 768px; // Планшет
 $desktop-width: 1220px; // Десктоп
+
+@mixin centering {
+  width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+}

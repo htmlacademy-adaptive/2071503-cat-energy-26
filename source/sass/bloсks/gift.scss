@@ -1,33 +1,4 @@
 // Подарки
-.gift {
-  margin: 35px 20px;
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-top: auto;
-    width: 245px;
-  }
-}
-
-.gift__wrapper-background {
-  background-image: url("../img/gift-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.gift__wrapper {
-  padding: 59px 60px 43px 59px;
-
-  @media (min-width: $tablet-width) {
-    padding: 57px 124px 60px 77px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 55px 43px 42px 41px;
-  }
-}
-
 .gift__title {
   font-family: var(--additional-font);
   font-size: 16px;
@@ -35,17 +6,28 @@
   color: var(--font-color-light);
   font-weight: 400;
   text-align: center;
-  margin: 0;
+  background-image: url("../img/gift-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 59px 60px 43px 59px;
+  margin: 35px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     text-align: start;
+    padding: 57px 124px 60px 77px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     text-align: center;
+    padding: 55px 43px 42px 41px;
+    margin: 0;
+    margin-top: auto;
+    width: 161px;
+    height: 100%;
   }
 }
 

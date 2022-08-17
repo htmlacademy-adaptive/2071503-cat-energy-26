@@ -1,15 +1,16 @@
 //Каталог продукции
 .products {
   padding-top: 27px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    @include centering;
+    margin-bottom: 75px;
   }
 }
 
