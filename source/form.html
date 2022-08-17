@@ -21,6 +21,7 @@
         <button class="nav__toggle" type="button"><span class="visually-hidden">Меню
               навигации</span></button>
       </div>
+      <div class="nav__block"></div>
         <ul class="nav__list ">
           <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
           <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог&nbsp;продукции</a></li>
@@ -67,19 +68,28 @@
 
               <ul class="form__list form__list--programs">
                 <li class="form__item form__item--programs">
-                  <input class="form__input visually-hidden" type="radio" name="programs" id="losing-weight"
+                  <label class="form__label form__label--programs" for="losing-weight">
+                    <input class="form__input form__input--programs visually-hidden" type="radio" name="programs" id="losing-weight"
                     checked>
-                  <label class="form__label" for="losing-weight">Похудение</label>
+                    <span class="form__radio-mark"></span>
+                    <span class="form__control-label">Похудение</span>
+                  </label>
                 </li>
 
                 <li class="form__item form__item--programs">
-                  <input class="form__input visually-hidden" type="radio" name="programs" id="weight-gain">
-                  <label class="form__label" for="weight-gain">Набор массы</label>
+                  <label class="form__label form__label--programs" for="weight-gain">
+                    <input class="form__input form__input--programs visually-hidden" type="radio" name="programs" id="weight-gain">
+                    <span class="form__radio-mark"></span>
+                    <span class="form__control-label">Набор массы</span>
+                  </label>
                 </li>
 
                 <li class="form__item form__item--programs">
-                  <input class="form__input visually-hidden" type="radio" name="programs" id="don't-know">
-                  <label class="form__label" for="don't-know">Не знаю (Нужен ваш совет)</label>
+                  <label class="form__label form__label--programs" for="don't-know">
+                    <input class="form__input form__input--programs visually-hidden" type="radio" name="programs" id="don't-know">
+                    <span class="form__radio-mark"></span>
+                    <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -90,13 +100,13 @@
 
             <ul class="form__list form__list--owner">
               <li class="form__item form__item--owner">
-                <label class="form__label" for="email">E&#8209;mail:*</label>
-                <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+                <label class="form__label form__label--email" for="email">E&#8209;mail:*</label>
+                <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
               </li>
 
               <li class="form__item form__item--owner">
-                <label class="form__label" for="tel">Телефон:*</label>
-                <input class="form__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+                <label class="form__label form__label--tel" for="tel">Телефон:*</label>
+                <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
@@ -114,24 +124,36 @@
 
             <ul class="form__list form__list--additionally">
               <li class="form__item form__item--additionally">
-                  <input class="form__input visually-hidden" type="checkbox" name="sweetener" id="sweetener"
+                  <label class="form__label form__label--additionally" for="sweetener">
+                    <input class="form__input form__input--additionally visually-hidden" type="checkbox" name="sweetener" id="sweetener"
                     checked>
-                  <label class="form__label form__label--additionally" for="sweetener">Сахарозаменитель</label>
+                    <span class="form__checkbox-mark"></span>
+                    <span class="form__control-label">Сахарозаменитель</span>
+                  </label>
              </li>
 
              <li class="form__item form__item--additionally">
-                 <input class="form__input visually-hidden" type="checkbox" name="water" id="water">
-                 <label class="form__label form__label--additionally" for="water">Питьевая вода</label>
+                 <label class="form__label form__label--additionally" for="water">
+                  <input class="form__input form__input--additionally visually-hidden" type="checkbox" name="water" id="water">
+                  <span class="form__checkbox-mark"></span>
+                  <span class="form__control-label">Питьевая вода</span>
+                  </label>
              </li>
 
              <li class="form__item form__item--additionally">
-                 <input class="form__input visually-hidden" type="checkbox" name="milk" id="milk">
-                  <label class="form__label form__label--additionally" for="milk">Молоко</label>
+                  <label class="form__label form__label--additionally" for="milk">
+                    <input class="form__input form__input--additionally visually-hidden" type="checkbox" name="milk" id="milk">
+                    <span class="form__checkbox-mark"></span>
+                    <span class="form__control-label">Молоко</span>
+                  </label>
               </li>
 
              <li class="form__item form__item--additionally">
-                 <input class="form__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-                  <label class="form__label form__label--additionally" for="vitamins">Витамины</label>
+                  <label class="form__label form__label--additionally" for="vitamins">
+                    <input class="form__input form__input--additionally visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+                    <span class="form__checkbox-mark"></span>
+                    <span class="form__control-label">Витамины</span>
+                  </label>
              </li>
             </ul>
           </fieldset>

@@ -121,10 +121,22 @@
   grid-column: 2/3;
   text-align: end;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 9px;
+    margin-bottom: 14px;
+  }
 }
 
 .products__specification {
   grid-column: 1/2;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 9px;
+    margin-bottom: 14px;
+  }
 }
 
 .products__button {
