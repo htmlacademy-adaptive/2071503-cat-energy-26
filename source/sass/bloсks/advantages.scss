@@ -1,11 +1,10 @@
 // Секция преимуществ
+
 .advantages {
   margin: 0 20px 0 20px;
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    @include centering;
   }
 }
 
@@ -103,4 +102,3 @@
     padding-bottom: 40px;
   }
 }
-

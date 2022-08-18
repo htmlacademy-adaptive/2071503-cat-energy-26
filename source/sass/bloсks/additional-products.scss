@@ -1,15 +1,13 @@
 // Дополнительные товары
 .additional-products {
-  padding-top: 25px;
+  border-top: 3px solid var(--bright-color);
 
   @media (min-width: $tablet-width) {
-    padding-top: 68px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/5;
-    padding-top: 0;
-    margin-right: 79px;
+    margin-bottom: 86px;
   }
 }
 
@@ -20,15 +18,26 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 36px;
-  padding: 0 0 0 20px;
+  margin-top: -20px;
+  background-color: #ffffff;
+  width: 226px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     margin-bottom: 80px;
+    width: 340px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    display: block;
+    padding: 0 20px;
+    margin-left: var(--magic-indent);
+    margin-right: var(--magic-indent);
   }
 }
 
@@ -38,7 +47,8 @@
   padding: 0;
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 0 79px 0 0;
+    grid-column: 1/5;
   }
 }
 
@@ -151,5 +161,16 @@
     margin-left: 53px;
     margin-top: 15px;
     margin-bottom: 17px;
+  }
+}
+
+.additional-products__global-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: min-content;
+
+    @include centering;
+    overflow: hidden;
   }
 }

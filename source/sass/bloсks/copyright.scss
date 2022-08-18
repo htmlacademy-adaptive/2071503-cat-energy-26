@@ -7,3 +7,9 @@
   text-decoration: none;
   color: var(--font-color-dark);
 }
+
+.copyright__text {
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+}

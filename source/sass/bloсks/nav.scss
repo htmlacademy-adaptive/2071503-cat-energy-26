@@ -1,7 +1,7 @@
 // навигация шапки сайта
 
 .nav {
-  min-width: 280px;
+  position: relative;
 
   // Планшетная ширина экрана
   @media (min-width: $tablet-width) {
@@ -13,21 +13,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    @include centering;
     padding: 0;
   }
 }
 
 .nav__wrapper {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: #ffffff;
   align-items: center;
   min-height: 66px;
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
+    position: static;
     display: flex;
     justify-content: space-between;
     align-self: center;
@@ -36,9 +39,20 @@
   }
 }
 
+.nav__block {
+  width: 100%;
+  min-height: 65px;
+
+  @media (min-width: $tablet-width) {
+    width: 0;
+    min-height: 0;
+  }
+}
+
 .nav__logo {
   display: flex;
   align-items: center;
+  margin-left: 20px;
 }
 
 .nav__img--pic {
@@ -57,6 +71,7 @@
   background-repeat: no-repeat;
   background-color: var(--bg-color-light);
   cursor: pointer;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -75,13 +90,18 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
+    position: static;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-self: center;
+    width: auto;
     min-width: 440px;
+    background-color: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +122,8 @@
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 18px;
-    padding-bottom: 10px;
+    padding: 10px 0;
+    margin: 0 10px;
   }
 
   @media (min-width: $tablet-width) {

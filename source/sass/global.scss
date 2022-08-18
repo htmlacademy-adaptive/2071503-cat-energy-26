@@ -11,23 +11,7 @@
   --font-color-dark: #444444; // Темный цвет текста
   --bright-color: #68b738; // Акцентный цвет
   --backgroun-main-color: #f2f2f2; // Цвет фона страницы
-}
 
-.page__body {
-  height: 100%;
-  margin: 0;
-  box-sizing: border-box;
+  // Отступы заголовков
+  --magic-indent: calc(50% - 610px - 20px);
 }
-
-.global-wrapper {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding-bottom: 86px;
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 75px;
-  }
-}
-

@@ -1,15 +1,16 @@
 //Каталог продукции
 .products {
   padding-top: 27px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    @include centering;
+    margin-bottom: 75px;
   }
 }
 
@@ -121,10 +122,22 @@
   grid-column: 2/3;
   text-align: end;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 9px;
+    margin-bottom: 14px;
+  }
 }
 
 .products__specification {
   grid-column: 1/2;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 9px;
+    margin-bottom: 14px;
+  }
 }
 
 .products__button {

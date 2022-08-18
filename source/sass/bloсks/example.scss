@@ -24,9 +24,7 @@
 
 .example__wrapper-centr {
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    @include centering;
     padding: 70px 0 75px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

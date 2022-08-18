@@ -1,9 +1,14 @@
 //Форма сайта
+
 // Общие стили
-.filter {
+.form__filter {
   padding-top: 27px;
   margin: 0 20px;
   margin-bottom: 32px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 82px 0;
+  }
 }
 
 .form__main-title {
@@ -19,17 +24,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    @include centering;
   }
 }
 
 .form__description-wrapper-center {
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    @include centering;
   }
 }
 
@@ -48,13 +49,19 @@
 }
 
 .form__group-wrapper {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+
+    @include centering;
+    margin-bottom: 69px;
   }
 }
 
@@ -62,6 +69,18 @@
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.form__group--owner {
+  border-top: 3px solid var(--bright-color);
+}
+
+.form__group--comments {
+  border-top: 3px solid var(--bright-color);
+}
+
+.form__group--additionally {
+  border-top: 3px solid var(--bright-color);
 }
 
 .form__group--programs {
@@ -126,9 +145,8 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 78px;
     margin-bottom: 69px;
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+
+    @include centering;
   }
 }
 
@@ -145,9 +163,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+
+    @include centering;
   }
 }
 
@@ -167,10 +184,6 @@
   color: var(--font-color-dark);
 }
 
-.form__label--additionally {
-  color: var(--primary-color);
-}
-
 .form__legend {
   font-family: var(--main-font);
   font-size: 24px;
@@ -183,32 +196,50 @@
 }
 
 .form__legend--owner {
-  padding-top: 26px;
   margin-bottom: 35px;
+  width: 187px;
+  padding-right: 14px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 71px;
     margin-bottom: 76px;
+    padding-right: 20px;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 69px;
+    padding: 0 20px;
+    margin-left: var(--magic-indent);
+    margin-right: var(--magic-indent);
   }
 }
 
 .form__legend--comments {
   margin-bottom: 38px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 20px;
+    margin-left: var(--magic-indent);
+    margin-right: var(--magic-indent);
   }
 }
 
 .form__legend--additionally {
   margin-bottom: 34px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 20px;
+    margin-left: var(--magic-indent);
+    margin-right: var(--magic-indent);
   }
 }
 
@@ -245,7 +276,7 @@
 }
 
 .form__item--programs {
-  margin-bottom: 13px;
+  margin-bottom: 23px;
 }
 
 .form__item--owner {
@@ -265,8 +296,9 @@
     width: 100%;
     font-size: 16px;
     text-transform: uppercase;
-    padding: 13px 15px 14px 15px;
+    padding: 13px 40px 14px 15px;
     border: 1px solid #e7e7e7;
+    position: relative;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -296,15 +328,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    @include centering;
   }
 }
 
 .form__item--additionally {
   color: var(--primary-color);
-  margin-bottom: 12px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
@@ -362,3 +392,122 @@
     align-self: center;
   }
 }
+
+.form__control-label {
+  color: var(--primary-color);
+}
+
+/*-------------------------*/
+// Стили для чекбоксов и радиокнопок
+.form__label--programs,
+.form__label--additionally {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 55px;
+  }
+}
+
+.form__checkbox-mark {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 38px;
+    height: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+  }
+}
+
+.form__radio-mark {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.form__input--additionally[type="checkbox"]:checked + .form__checkbox-mark::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icons/control-mark-cheackbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  top: 7px;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 19px;
+    top: 8px;
+    left: 8px;
+  }
+}
+
+.form__input--programs[type="radio"]:checked + .form__radio-mark::before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.form__label--additionally:hover .form__checkbox-mark,
+.form__label--programs:hover .form__radio-mark {
+  border-color: #bababa;
+}
+
+.form__input:disabled + .form__checkbox-mark,
+.form__input:disabled + .form__radio-mark {
+  border-color: #bababa;
+  opacity: 0.3;
+}
+/*-------------------------*/
+/*-------------------------*/
+// Иконки e-mail и телефона
+.form__label--email,
+.form__label--tel {
+  position: relative;
+}
+
+.form__input--email {
+  background-image: url("../img/icons/e-mail-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 97%;
+}
+
+.form__input--tel {
+  background-image: url("../img/icons/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 97%;
+}
+/*-------------------------*/
