@@ -15,20 +15,3 @@
   // Отступы заголовков
   --magic-indent: calc(50% - 610px - 20px);
 }
-
-.page__body {
-  height: 100%;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.global-wrapper {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: min-content;
-
-    @include centering;
-    overflow: hidden;
-  }
-}

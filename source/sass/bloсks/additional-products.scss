@@ -163,3 +163,14 @@
     margin-bottom: 17px;
   }
 }
+
+.additional-products__global-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: min-content;
+
+    @include centering;
+    overflow: hidden;
+  }
+}
