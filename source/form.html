@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи - Запись</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/icon-180x180.png"> <!-- 180×180 -->
+  <script src="js/script.js"></script>
 </head>
 
 <body class="page__body">
@@ -15,8 +19,12 @@
     <nav class="nav">
       <div class="nav__wrapper">
         <a class="nav__logo logo" href="">
-          <img class="nav__img nav__img--pic" src="img/logo-img/logo-image.svg" width="33" height="38" alt="Изображение логотипа">
-          <img class="nav__img" src="img/logo-img/logo-text.svg" width="101" height="18" alt="Cat Energy">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-img/logo-tablet.svg">
+            <img class="nav__img nav__img--pic" src="img/logo-img/logo-image.svg" width="33" height="38" alt="Изображение логотипа">
+          </picture>
+          <img class="nav__img nav__img--text" src="img/logo-img/logo-text.svg" width="101" height="18" alt="Cat Energy">
         </a>
         <button class="nav__toggle" type="button"><span class="visually-hidden">Меню
               навигации</span></button>
