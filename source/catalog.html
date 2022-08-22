@@ -10,7 +10,6 @@
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/icon-180x180.png"> <!-- 180×180 -->
-  <script src="js/script.js"></script>
 </head>
 
 <body class="page__body">
@@ -26,11 +25,14 @@
           </picture>
           <img class="nav__img nav__img--text" src="img/logo-img/logo-text.svg" width="101" height="18" alt="Cat Energy">
         </a>
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Меню
-              навигации</span></button>
+        <div class="nav__toggle">
+          <span class="nav__line nav__line--first"></span>
+          <span class="nav__line nav__line--second"></span>
+          <span class="nav__line nav__line--last"></span>
+        </div>
       </div>
       <div class="nav__block"></div>
-        <ul class="nav__list ">
+        <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
           <li class="nav__item"><a class="nav__link nav__link--current" href="#">Каталог&nbsp;продукции</a></li>
           <li class="nav__item"><a class="nav__link" href="form.html">Подбор&nbsp;программы</a></li>
@@ -385,6 +387,6 @@
         </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
