@@ -2,6 +2,7 @@
 
 .nav {
   position: relative;
+  z-index: 10;
 
   // Планшетная ширина экрана
   @media (min-width: $tablet-width) {
@@ -36,6 +37,10 @@
     align-self: center;
     min-width: 175px;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
   }
 }
 
@@ -72,24 +77,63 @@
 }
 
 .nav__toggle {
-  border: none;
-  padding: 15px;
-  background-image: url("../img/icons/nav__toggle-icon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--bg-color-light);
-  cursor: pointer;
+  display: block;
+  width: 24px;
+  height: 18px;
   margin-right: 20px;
+  position: relative;
+  z-index: 5;
 
-  @media (min-width: $tablet-width) {
+  .nav__line {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+
+    &--first {
+      top: 0;
+      transition: 1s;
+    }
+
+    &--second {
+      left: 0;
+      transition: 1s;
+    }
+
+    &--last {
+      top: auto;
+      bottom: 0;
+      transition: 1s;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.nav__toggle.active {
+  .nav__line {
+    transform: scale(0);
+
+    &--first {
+      transform: rotate(-45deg);
+      top: calc(50% - 1px);
+      transition: 1s;
+    }
+
+    &--second {
+      left: 100%;
+      transition: 1s;
+    }
+
+    &--last {
+      transform: rotate(45deg);
+      bottom: calc(50% - 1px);
+      transition: 1s;
+    }
   }
 }
 
@@ -100,6 +144,9 @@
   padding: 0;
   background-color: #ffffff;
   width: 100%;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: 1s;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -110,11 +157,19 @@
     width: auto;
     min-width: 440px;
     background-color: none;
+    transform: translateX(0);
   }
 
   @media (min-width: $desktop-width) {
     min-width: 480px;
+    background-color: transparent;
   }
+}
+
+.nav__list.active {
+  transform: translateX(0);
+  transition: 1s;
+  position: fixed;
 }
 
 .nav__link {
@@ -152,8 +207,19 @@
     }
   }
 
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      color: #ffffff;
+    }
+  }
+}
+
+.nav__link--current-desktop {
   @media (min-width: $desktop-width) {
-    font-size: 20px;
+    &::after {
+      background-color: #ffffff;
+    }
   }
 }
 

@@ -3,37 +3,44 @@
 .promo__wrapper-preview {
   display: flex;
   flex-direction: column;
-  background-image: url("../img/light-green-background.png"),
+  background-image: linear-gradient(
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)),
     url("../img/promo-img-cat.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100% 302px, auto;
+  background-size: 100% 302px, 320px 302px;
+  padding: 27px 35px 0 35px;
 
   @media (min-width: $tablet-width) {
     background-image: none;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     @include centering;
+    margin-bottom: 267px;
   }
 }
 
-/*
-.promo__wrapper-preview {
-  &::before {
+.promo__wrapper-preview::before {
+  @media (min-width: $desktop-width) {
     content: "";
-    display: block;
-    background-size: auto;
+    position: absolute;
+    width: 50%;
+    height: 694px;
+    background-image: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)),
+      url("../img/promo-img-cat-desktop.jpg");
+    background-position: center;
     background-repeat: no-repeat;
-    background-image:
-      linear-gradient(
-        hsl(97 53% 47% / 85%),
-        hsl(97 53% 47% / 85%)
-      ),
-      url("../img/promo-img-cat.jpg");
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 }
-*/
 
 .promo__main-title {
   font-family: var(--main-font);
@@ -42,16 +49,20 @@
   font-weight: 400;
   text-align: center;
   color: var(--font-color-light);
-  margin: 0 15px 25px 15px;
+  margin: 0 0 25px 0;
 
   @media (min-width: $tablet-width) {
     color: var(--primary-color);
     font-size: 60px;
     line-height: 1.2;
     margin: 0 0 41px 87px;
-    min-width: 430px;
+    width: 430px;
     text-align: start;
-    order: 1;
+    order: -3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 110px;
   }
 }
 
@@ -69,9 +80,9 @@
     font-size: 20px;
     line-height: 1.2;
     min-width: 430px;
-    margin: 0 0 20px 87px;
+    margin: 0 0 49px 87px;
     text-align: start;
-    order: 2;
+    order: -2;
   }
 }
 
@@ -89,8 +100,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 87px;
-    order: 3;
+    order: -1;
     width: 244px;
+    padding: 19px 26px;
     box-sizing: border-box;
   }
 }
@@ -101,9 +113,23 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    order: 4;
+    width: auto;
+    height: auto;
+    position: relative;
+    top: -80px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    bottom: inherit;
+    margin: auto;
+    transform: translateX(-29%);
   }
 }
+
 
 // Список программ
 .promo__programs-list {
@@ -116,14 +142,13 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     margin-bottom: 41px;
-  }
 
-  @media (min-width: $desktop-width) {
     @include centering;
   }
 }
 
 .promo__programs-item {
+  position: relative;
   background-color: var(--backgroun-main-color);
   margin-bottom: 20px;
   padding: 20px;
@@ -131,6 +156,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
     padding: 81px 62px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -142,9 +171,16 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 29px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
   }
 }
 
@@ -152,12 +188,40 @@
   content: url("../img/icons/weight-loss-cat.svg");
   display: inline-block;
   margin-right: 19px;
+
+  @media (min-width: $tablet-width) {
+    content: url("../img/icons/weight-loss-cat-tablet.svg");
+    position: absolute;
+    right: 62px;
+    top: 81px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    content: url("../img/icons/weight-loss-cat-desktop.svg");
+    margin-right: 62px;
+  }
 }
 
 .promo__programs-title--weight-gain::before {
   content: url("../img/icons/weight-gain-cat.svg");
   display: inline-block;
   margin-right: 11px;
+
+  @media (min-width: $tablet-width) {
+    content: url("../img/icons/weight-gain-cat-tablet.svg");
+    position: absolute;
+    right: 28px;
+    top: 91px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    content: url("../img/icons/weight-gain-cat-desktop.svg");
+    margin-right: 47px;
+  }
 }
 
 .promo__programs-description {
@@ -173,6 +237,14 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     border-bottom: none;
+    max-width: 340px;
+    padding-bottom: 0;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    margin-bottom: 23px;
   }
 }
 

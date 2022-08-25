@@ -29,6 +29,14 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .footer__list {
@@ -44,6 +52,14 @@
 
 .footer__link {
   padding: 5px;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 

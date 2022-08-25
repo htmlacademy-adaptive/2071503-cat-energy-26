@@ -1,11 +1,25 @@
 // Ссылка HTML Academy
 
 .copyright {
+  display: flex;
+  align-items: center;
   font-family: var(--additional-font);
   font-size: 16px;
   line-height: 1.2;
   text-decoration: none;
   color: var(--font-color-dark);
+}
+
+.copyright:active {
+  opacity: 30%;
+}
+
+.copyright__img {
+  fill: #666666;
+}
+
+.copyright__img:hover {
+  fill: #68b738;
 }
 
 .copyright__text {
