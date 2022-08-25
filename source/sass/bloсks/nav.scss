@@ -2,6 +2,7 @@
 
 .nav {
   position: relative;
+  z-index: 10;
 
   // Планшетная ширина экрана
   @media (min-width: $tablet-width) {
@@ -36,6 +37,10 @@
     align-self: center;
     min-width: 175px;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
   }
 }
 
@@ -157,6 +162,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 480px;
+    background-color: transparent;
   }
 }
 
@@ -201,8 +207,19 @@
     }
   }
 
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      color: #ffffff;
+    }
+  }
+}
+
+.nav__link--current-desktop {
   @media (min-width: $desktop-width) {
-    font-size: 20px;
+    &::after {
+      background-color: #ffffff;
+    }
   }
 }
 
