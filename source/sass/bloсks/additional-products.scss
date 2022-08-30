@@ -152,6 +152,8 @@
   padding: 10px 0;
   cursor: pointer;
 
+  @include button-states;
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }

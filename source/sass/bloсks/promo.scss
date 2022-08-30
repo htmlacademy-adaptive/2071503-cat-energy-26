@@ -98,6 +98,8 @@
   text-align: center;
   margin: 0 20px 20px 20px;
 
+  @include button-states;
+
   @media (min-width: $tablet-width) {
     margin: 0 0 0 87px;
     order: -1;
@@ -256,13 +258,23 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &::after {
+    content: url("../img/icons/right-arrow-icon.svg");
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  &:hover {
+    &::after {
+      content: url("../img/icons/right-arrow-icon-hover.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
-}
-
-.promo__programs-link::after {
-  content: url("../img/icons/right-arrow-icon.svg");
-  display: inline-block;
-  margin-left: 15px;
 }

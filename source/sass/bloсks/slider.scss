@@ -2,64 +2,54 @@
 .slider {
   grid-column: 2/3;
   grid-row: 1/5;
-  display: grid;
-  place-content: center;
   position: relative;
-  overflow: hidden;
-  --position: 50%;
-  max-width: 280px;
-  max-height: 256px;
+  width: 280px;
+  height: 256px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
-.slider__container-img {
-  max-width: 280px;
-  max-height: 256px;
-}
 
 .slider-img {
-  display: block;
-  width: 100%;
+  max-width: 49%;
   height: 100%;
   object-fit: cover;
-  object-position: left;
+
+  @media (min-width: $tablet-width) {
+    max-width: 50%;
+  }
 }
 
 .slider__image-befor {
-  position: absolute;
-  inset: 0;
-  width: var(--position);
+  object-position: left;
 }
 
-.slider__input {
-  position: absolute;
-  inset: 0;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
+.slider__image-after {
+  object-position: right;
 }
 
 .slider__line {
   position: absolute;
-  inset: 0;
   width: 4px;
   height: 100%;
+  left: 50%;
   background-color: #666666;
   z-index: 1;
-  left: var(--position);
   transform: translateX(-50%);
-  pointer-events: none;
 }
 
 .slider__button {
   position: absolute;
-  display: grid;
-  place-items: center;
   top: 40%;
-  left: var(--position);
-  transform: translateX(-50%,);
-  pointer-events: none;
+  transform: translateX(-46%);
   z-index: 2;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .slider__button-img-arrow {
@@ -68,4 +58,12 @@
 
 .slider__button-img {
   fill: #ffffff;
+}
+
+.slider__line:hover {
+  background-color: #68b738;
+}
+
+.slider__button:hover .slider__button-img-arrow {
+  fill: #68b738;
 }

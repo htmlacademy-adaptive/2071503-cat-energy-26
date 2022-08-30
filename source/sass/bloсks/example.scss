@@ -3,11 +3,13 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-color: var(--bg-color-light);
+    background: linear-gradient(to top, var(--backgroun-main-color) 50%, var(--bg-color-light) 50%);
+    padding-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
     background: linear-gradient(to top, var(--backgroun-main-color) 70%, var(--bg-color-light) 30%);
+    padding-bottom: 0;
   }
 }
 

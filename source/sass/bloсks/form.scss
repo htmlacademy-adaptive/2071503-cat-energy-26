@@ -263,6 +263,10 @@
     text-transform: uppercase;
     border: 1px solid #e7e7e7;
 
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+
     @media (min-width: $tablet-width) {
       font-size: 20px;
     }
@@ -300,6 +304,10 @@
     padding: 13px 40px 14px 15px;
     border: 1px solid #e7e7e7;
     position: relative;
+
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -370,6 +378,8 @@
   padding: 10px 44px;
   cursor: pointer;
   box-sizing: border-box;
+
+  @include button-states;
 
   @media (min-width: $tablet-width) {
     width: 282px;

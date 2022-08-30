@@ -163,6 +163,8 @@
   padding: 10px;
   text-align: center;
   cursor: pointer;
+
+  @include button-states;
 }
 
 // Стили для блока "Показать еще"
@@ -233,4 +235,13 @@
   background-color: var(--backgroun-main-color);
   padding: 10px 0;
   text-align: center;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    opacity: 0.3;
+  }
 }

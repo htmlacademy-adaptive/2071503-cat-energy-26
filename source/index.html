@@ -48,7 +48,9 @@
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
             <source media="(min-width: 1440px)" srcset="img/product-preview-desktop.png">
+            <source media="(min-width: 1440px)" srcset="img/product-preview-desktop.webp">
             <source media="(min-width: 768px)" srcset="img/product-preview-tablet.png">
+            <source media="(min-width: 768px)" srcset="img/product-preview-tablet.webp">
             <img class="promo__product-preview" src="img/product-preview.png" width="280" height="270"
             alt="Пример упаковки с питанием">
           </picture>
@@ -127,20 +129,35 @@
         <p class="example__cost"><span class="example__cost-description">Затраты на питание:</span><span class="example__cost-value">15 000 РУБ.</span></p>
 
         <div class="slider">
-          <div class="slider__container-img">
-            <img class="slider__image-befor slider-img" src="img/cat-fat.png" alt="Толстый кот" width="280" height="256" draggable="false"/>
-            <img class="slider__image-after slider-img" src="img/cat-skinny.png" alt="Худой кот" width="280" height="256" draggable="false"/>
+          <div class="slider__line">
+            <button class="slider__button" type="button" aria-hidden="true">
+              <svg class="slider__svg" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <rect class="slider__button-img" x="1" y="1" width="38" height="38" rx="19"/>
+                <path class="slider__button-img-arrow" d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z"/>
+                <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666" stroke-width="2"/>
+                </svg>
+            </button>
           </div>
-          <input class="slider__input" type="range" min="0" max="100" value="50">
-          <div class="slider__line"></div>
-          <div class="slider__button" aria-hidden="true">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="slider__button-img" x="1" y="1" width="38" height="38" rx="19"/><path class="slider__button-img-arrow" d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z"/><rect x="1" y="1" width="38" height="38" rx="19" stroke="#666" stroke-width="2"/></svg>
+          <div class="slider__container-img">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-fat-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/cat-fat-desktop.webp">
+              <source srcset="img/cat-fat.webp">
+              <img class="slider-img slider__image-befor" src="img/cat-fat.png" alt="Толстый кот" width="280" height="256"/>
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-skinny-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/cat-skinny-desktop.webp">
+              <source srcset="img/cat-skinny.webp">
+              <img class="slider-img slider__image-after" src="img/cat-skinny.png" alt="Худой кот" width="280" height="256"/>
+            </picture>
           </div>
         </div>
+
       </div>
     </section>
     <!-- Секция местонахождения компании -->
-    <section class="location location--wrapper-bg">
+    <section class="location">
       <div class="location__wrapper-center">
         <div class="location__wrapper">
           <h2 class="visually-hidden">Место нахождение</h2>
