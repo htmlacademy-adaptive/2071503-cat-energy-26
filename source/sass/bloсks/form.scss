@@ -263,13 +263,7 @@
     text-transform: uppercase;
     border: 1px solid #e7e7e7;
 
-    &:hover {
-      border: 1px solid #cdcdcd;
-    }
-
-    &:focus {
-      border: 1px solid #ff0000;
-    }
+    @include input-states;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -309,13 +303,7 @@
     border: 1px solid #e7e7e7;
     position: relative;
 
-    &:hover {
-      border: 1px solid #cdcdcd;
-    }
-
-    &:focus {
-      border: 1px solid #ff0000;
-    }
+    @include input-states;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -337,6 +325,8 @@
   padding: 9px 10px 9px 15px;
   box-sizing: border-box;
   margin: 0 0 23px 0;
+
+  @include input-states;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -511,6 +501,7 @@
   opacity: 0.3;
 }
 /*-------------------------*/
+
 /*-------------------------*/
 // Иконки e-mail и телефона
 .form__label--email,

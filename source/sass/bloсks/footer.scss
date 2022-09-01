@@ -51,7 +51,10 @@
 }
 
 .footer__link {
-  padding: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     stroke: #68b738;
@@ -73,3 +76,4 @@
     border: none;
   }
 }
+

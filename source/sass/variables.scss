@@ -22,3 +22,37 @@ $desktop-width: 1440px; // Десктоп
     opacity: 0.3;
   }
 }
+
+//Состояние форм
+@mixin input-states {
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    border: 1px solid #444444;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
+
+  &:hover:invalid {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #444444;
+  }
+
+  &:disabled,
+  &:disabled:hover {
+    color: #595959;
+    background-color: #c9bbbb;
+    border-color: #595959;
+  }
+}
