@@ -1,9 +1,9 @@
 // Дополнительные товары
 .additional-products {
-  border-top: 3px solid var(--bright-color);
+  border-top: 2px solid var(--bright-color);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,27 +17,27 @@
   line-height: 1.2;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   margin-top: -20px;
   background-color: #ffffff;
   width: 226px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
-    margin-bottom: 80px;
     width: 340px;
     display: flex;
     justify-content: flex-start;
-    margin-top: -30px;
+    padding: 0 37px;
+    margin: -29px 0 80px 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding: 0 20px;
+    padding: 0 35px 0 40px;
     margin-left: var(--magic-indent);
     margin-right: var(--magic-indent);
+    margin-bottom: 78px;
   }
 }
 
@@ -46,6 +46,10 @@
   margin: 0 20px;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0 79px 0 0;
     grid-column: 1/5;
@@ -53,19 +57,19 @@
 }
 
 .additional-products__item {
-  padding: 13px 0 19px 0;
+  padding: 11px 0 19px 0;
   border-top: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid #ebebeb;
-    padding: 26px 38px 28px 38px;
+    padding: 26px 38px 33px 38px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     border: none;
     border-top: 1px solid #ebebeb;
@@ -83,17 +87,19 @@
   line-height: 1.2;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     margin-right: auto;
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    margin-top: -5px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-top: -2px;
   }
 }
 
@@ -106,7 +112,7 @@
   font-family: var(--additional-font);
   font-size: 14px;
   line-height: 1.2;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   display: inline-block;
   color: var(--font-color-dark);
 
@@ -118,6 +124,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-left: 108px;
+    margin-top: 3px;
   }
 }
 
@@ -134,14 +142,15 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 3px;
   }
 }
 
 .additional-products__button {
   font-family: var(--main-font);
   font-size: 16px;
-  line-height: 1.3;
+  line-height: 1.2;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
@@ -160,9 +169,7 @@
 
   @media (min-width: $desktop-width) {
     width: 244px;
-    margin-left: 53px;
-    margin-top: 15px;
-    margin-bottom: 17px;
+    margin: 15px 0 17px 0;
   }
 }
 

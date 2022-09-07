@@ -41,6 +41,10 @@ $desktop-width: 1440px; // Десктоп
     border: 1px solid #ff8282;
   }
 
+  &:placeholder-shown {
+    border: 1px solid #cdcdcd;
+  }
+
   &:hover:invalid {
     border: 1px solid #cdcdcd;
   }
