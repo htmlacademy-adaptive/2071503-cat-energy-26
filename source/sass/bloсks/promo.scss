@@ -14,9 +14,9 @@
   display: flex;
   flex-direction: column;
   background: url("../img/group-promo-img.png"),
-    linear-gradient(
-    rgba(100, 168, 60, 1),
-    rgba(90, 165, 58, 1));
+    linear-gradient(to right,
+     rgba(100, 168, 60, 1) 50%,
+     rgba(98, 165, 58, 1) 50%);
   background-position: top;
   background-repeat: no-repeat;
   background-size: 320px auto, 100% 61%;
@@ -46,7 +46,7 @@
       rgba(104, 183, 56, 0.85),
       rgba(104, 183, 56, 0.85)),
       url("../img/promo-img-cat-desktop.jpg");
-    background-position: center;
+    background-position: end;
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
@@ -306,6 +306,11 @@
     content: url("../img/icons/right-arrow-icon.svg");
     display: inline-block;
     margin-left: 26px;
+    transform: translateY(-2px);
+
+    @media (min-width: $desktop-width) {
+      transform: translateY(-3px);
+    }
   }
 
   &:hover {

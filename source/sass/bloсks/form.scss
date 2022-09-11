@@ -571,6 +571,12 @@
   }
 }
 
+.form__input--additionally:focus + .form__checkbox-mark,
+.form__input--programs:focus + .form__radio-mark {
+  outline: 3px solid #68b738;
+  outline-offset: -3px;
+}
+
 .form__label--additionally:hover .form__checkbox-mark,
 .form__label--programs:hover .form__radio-mark {
   border-color: #bababa;

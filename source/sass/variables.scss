@@ -25,24 +25,12 @@ $desktop-width: 1440px; // Десктоп
 
 //Состояние форм
 @mixin input-states {
-  &:hover {
-    border: 1px solid #cdcdcd;
-  }
-
   &:focus-visible {
     outline: none;
   }
 
-  &:focus {
-    border: 1px solid #444444;
-  }
-
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     border: 1px solid #ff8282;
-  }
-
-  &:placeholder-shown {
-    border: 1px solid #cdcdcd;
   }
 
   &:hover:invalid {
@@ -50,7 +38,17 @@ $desktop-width: 1440px; // Десктоп
   }
 
   &:focus:invalid {
-    border: 1px solid #444444;
+    outline: 2px solid #ff8282;
+    outline-offset: -1px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+    outline-offset: -1px;
   }
 
   &:disabled,

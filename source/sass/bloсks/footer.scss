@@ -57,9 +57,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #666666;
 
   &:hover {
-    stroke: #68b738;
+    fill: #68b738;
   }
 
   &:active {
