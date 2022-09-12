@@ -294,8 +294,6 @@
     text-transform: uppercase;
     border: 1px solid #e7e7e7;
 
-    @include input-states;
-
     @media (min-width: $tablet-width) {
       font-size: 20px;
       padding: 10px 15px 10px 17px;
@@ -351,8 +349,6 @@
     border: 1px solid #e7e7e7;
     position: relative;
 
-    @include input-states;
-
     @media (min-width: $tablet-width) {
       font-size: 20px;
       padding: 10px 40px 10px 19px;
@@ -364,6 +360,10 @@
   @media (min-width: $tablet-width) {
     margin-right: 20px;
   }
+}
+
+.form__input {
+  @include input-states;
 }
 
 .form__comments {
@@ -571,8 +571,8 @@
   }
 }
 
-.form__input--additionally:focus + .form__checkbox-mark,
-.form__input--programs:focus + .form__radio-mark {
+.form__input--additionally:focus-visible + .form__checkbox-mark,
+.form__input--programs:focus-visible + .form__radio-mark {
   outline: 3px solid #68b738;
   outline-offset: -3px;
 }
@@ -608,6 +608,46 @@
 
 .form__input--tel {
   background-image: url("../img/icons/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 94%;
+
+  @media (min-width: $tablet-width) {
+    background-position: 97%;
+  }
+}
+
+.form__input--email:focus {
+  background-image: url("../img/icons/e-mail-icon-focus.svg");
+  background-repeat: no-repeat;
+  background-position: 94%;
+
+  @media (min-width: $tablet-width) {
+    background-position: 97%;
+  }
+}
+
+.form__input--tel:focus {
+  background-image: url("../img/icons/phone-icon-focus.svg");
+  background-repeat: no-repeat;
+  background-position: 94%;
+
+  @media (min-width: $tablet-width) {
+    background-position: 97%;
+  }
+}
+
+.form__input--email:invalid:not(:placeholder-shown) {
+  background-image: url("../img/icons/e-mail-icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 94%;
+
+  @media (min-width: $tablet-width) {
+    background-position: 97%;
+  }
+}
+
+.form__input--tel:invalid:not(:placeholder-shown) {
+  background-image: url("../img/icons/phone-icon-error.svg");
   background-repeat: no-repeat;
   background-position: 94%;
 
