@@ -3,6 +3,11 @@
 .advantages {
   margin: 0 20px 0 20px;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 0 30px;
+    margin-bottom: 24px;
+  }
+
   @media (min-width: $desktop-width) {
     @include centering;
   }
@@ -11,12 +16,13 @@
 .advantages__main-title {
   font-family: var(--main-font);
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1;
   margin: 15px 0 40px 0;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
+    font-size: 60px;
   }
 }
 
@@ -25,18 +31,21 @@
   margin: 0;
   padding: 0;
   counter-reset: advantages-counter;
+  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 37px;
-    column-gap: 100px;
+    row-gap: 20px;
+    column-gap: 60px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    column-gap: 75px;
+    flex-wrap: wrap;
+    column-gap: 94px;
     padding-bottom: 20px; // для счетчика
   }
 }
@@ -52,6 +61,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    line-height: 1.5;
     width: 227px;
     align-self: flex-start;
   }
@@ -74,6 +84,11 @@
     flex-shrink: 0;
     background: var(--bgi) no-repeat center, var(--bright-color);
     margin-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--benefit {
@@ -104,6 +119,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 40px;
+    min-width: 230px;
   }
 
   &::after {
@@ -115,13 +131,13 @@
       color: #f2f2f2;
       position: absolute;
       z-index: -1;
-      left: 30%;
-      bottom: -97px;
+      left: 35%;
+      bottom: -70px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 40%;
-      bottom: -113px;
+      left: 50%;
+      top: -67px;
     }
   }
 }

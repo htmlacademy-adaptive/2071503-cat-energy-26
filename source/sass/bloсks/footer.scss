@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 147px;
+    margin: 0 30px 0 30px;
     flex-direction: row;
     margin-top: auto;
     margin-bottom: auto;
@@ -18,12 +19,13 @@
 
   @media (min-width: $desktop-width) {
     @include centering;
+    margin-top: -5px;
   }
 }
 
 .footer__logo {
   text-align: center;
-  padding: 39px 0 32px 0;
+  padding: 39px 0 28px 0;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
@@ -47,11 +49,19 @@
   margin-right: auto;
   display: flex;
   justify-content: space-between;
-  padding: 23px 0 23px 0;
+  padding: 17px 0 11px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 0 11px 17px;
+  }
 }
 
 .footer__link {
-  padding: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #666666;
 
   &:hover {
     fill: #68b738;
@@ -66,7 +76,7 @@
 .footer__copyright {
   display: flex;
   justify-content: space-between;
-  padding: 22px 0 22px 0;
+  padding: 26px 0 20px 0;
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {

@@ -2,70 +2,88 @@
 .slider {
   grid-column: 2/3;
   grid-row: 1/5;
-  display: grid;
-  place-content: center;
   position: relative;
-  overflow: hidden;
-  --position: 50%;
-  max-width: 280px;
-  max-height: 256px;
-}
+  width: 280px;
+  height: 256px;
+  display: grid;
+  grid-template-columns: var(--percent) 1fr;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  --percent: 50%;
 
-.slider__container-img {
-  max-width: 280px;
-  max-height: 256px;
+  @media (min-width: $tablet-width) {
+    width: 554px;
+    height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 20px 0 0 0;
+  }
 }
 
 .slider-img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.slider__image-before {
   object-position: left;
 }
 
-.slider__image-befor {
-  position: absolute;
-  inset: 0;
-  width: var(--position);
-}
-
-.slider__input {
-  position: absolute;
-  inset: 0;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-.slider__line {
-  position: absolute;
-  inset: 0;
-  width: 4px;
-  height: 100%;
-  background-color: #666666;
-  z-index: 1;
-  left: var(--position);
-  transform: translateX(-50%);
-  pointer-events: none;
+.slider__image-after {
+  object-position: right;
 }
 
 .slider__button {
   position: absolute;
-  display: grid;
-  place-items: center;
-  top: 40%;
-  left: var(--position);
-  transform: translateX(-50%,);
-  pointer-events: none;
+  top: 42%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 46%;
+  }
 }
 
-.slider__button-img-arrow {
+.slider__button::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 256px;
+  left: 50%;
+  background-color: #666666;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+}
+
+.slider__button:hover::before {
+  background-color: #68b738;
+}
+
+.slider__button:active::before {
+  opacity: 0.6;
+}
+
+.slider__svg {
+  stroke: #666666;
   fill: #666666;
 }
 
-.slider__button-img {
-  fill: #ffffff;
+.slider__button:hover .slider__svg {
+  stroke: #68b738;
+  fill: #68b738;
+}
+
+.slider__button:active .slider__svg {
+  opacity: 0.6;
 }
