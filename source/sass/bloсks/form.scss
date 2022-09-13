@@ -316,28 +316,15 @@
 }
 
 .form__item--owner {
+  position: relative;
   margin-bottom: 14px;
   display: flex;
+  flex-direction: row-reverse;
+  gap: 11px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
-  }
-
-  .form__label {
-    margin-right: 11px;
-  }
-
-  .form__label--email {
-    @media (min-width: $tablet-width) {
-      margin-right: 20px;
-    }
-  }
-
-  .form__label--tel {
-    @media (min-width: $tablet-width) {
-      margin-right: 14px;
-    }
   }
 
   .form__input {
@@ -351,14 +338,8 @@
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
-      padding: 10px 40px 10px 19px;
+      padding: 10px 50px 10px 19px;
     }
-  }
-}
-
-.form__label--email {
-  @media (min-width: $tablet-width) {
-    margin-right: 20px;
   }
 }
 
@@ -395,6 +376,10 @@
   @media (min-width: $desktop-width) {
     @include centering;
   }
+}
+
+.form__comments::placeholder {
+  color: #444444;
 }
 
 .form__item--additionally {
@@ -591,68 +576,64 @@
 
 /*-------------------------*/
 // Иконки e-mail и телефона
-.form__label--email,
-.form__label--tel {
-  position: relative;
-}
-
-.form__input--email {
-  background-image: url("../img/icons/e-mail-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 93%;
+.form__label--email::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 15px;
+  background: url("../img/icons/e-mail-icon.svg") no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+  right: 5%;
 
   @media (min-width: $tablet-width) {
-    background-position: 97%;
+    right: 3%;
+    transform: translateY(5px) translateX(2px);
   }
 }
 
-.form__input--tel {
-  background-image: url("../img/icons/phone-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 94%;
+.form__input--email:focus + .form__label--email::before {
+  background-color: #68b738;
+  background-image: none;
+  mask-image: url("../img/icons/e-mail-icon.svg");
+  mask-repeat: no-repeat;
+}
+
+.form__input--email:invalid:not(:placeholder-shown) + .form__label--email::before {
+  background-color: #ff8282;
+  background-image: none;
+  mask-image: url("../img/icons/e-mail-icon.svg");
+  mask-repeat: no-repeat;
+}
+
+.form__label--tel::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 22px;
+  background: url("../img/icons/phone-icon.svg") no-repeat;
+  position: absolute;
+  z-index: 1;
+  right: 5%;
 
   @media (min-width: $tablet-width) {
-    background-position: 97%;
+    right: 3%;
+    transform: translateY(3px) translateX(2px);
   }
 }
 
-.form__input--email:focus {
-  background-image: url("../img/icons/e-mail-icon-focus.svg");
-  background-repeat: no-repeat;
-  background-position: 94%;
-
-  @media (min-width: $tablet-width) {
-    background-position: 97%;
-  }
+.form__input--tel:focus + .form__label--tel::before {
+  background-color: #68b738;
+  background-image: none;
+  mask-image: url("../img/icons/phone-icon.svg");
+  mask-repeat: no-repeat;
 }
 
-.form__input--tel:focus {
-  background-image: url("../img/icons/phone-icon-focus.svg");
-  background-repeat: no-repeat;
-  background-position: 94%;
-
-  @media (min-width: $tablet-width) {
-    background-position: 97%;
-  }
-}
-
-.form__input--email:invalid:not(:placeholder-shown) {
-  background-image: url("../img/icons/e-mail-icon-error.svg");
-  background-repeat: no-repeat;
-  background-position: 94%;
-
-  @media (min-width: $tablet-width) {
-    background-position: 97%;
-  }
-}
-
-.form__input--tel:invalid:not(:placeholder-shown) {
-  background-image: url("../img/icons/phone-icon-error.svg");
-  background-repeat: no-repeat;
-  background-position: 94%;
-
-  @media (min-width: $tablet-width) {
-    background-position: 97%;
-  }
+.form__input--tel:invalid:not(:placeholder-shown) + .form__label--tel::before {
+  background-color: #ff8282;
+  background-image: none;
+  mask-image: url("../img/icons/phone-icon.svg");
+  mask-repeat: no-repeat;
 }
 /*-------------------------*/
