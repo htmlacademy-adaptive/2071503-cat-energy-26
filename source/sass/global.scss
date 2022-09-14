@@ -18,7 +18,14 @@
   --magic-indent: calc(50% - var(--content-width) / 2 - 40px);
 }
 
+.page {
+  height: 100%;
+}
+
 .page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   min-width: 320px;
   box-sizing: border-box;
 }
