@@ -177,7 +177,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 40px 0;
-    gap: 0;
+    column-gap: 104px;
 
     @include centering;
   }
@@ -391,8 +391,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 221px;
-    margin-right: 104px;
+    width: 221px;
   }
 }
 

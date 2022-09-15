@@ -22,6 +22,16 @@
   background-size: 320px auto, 100% 61%;
   padding: 27px 20px 0 20px;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../img/group-promo-img@2x.png"),
+      linear-gradient(to right,
+        rgba(100, 168, 60, 1) 50%,
+        rgba(98, 165, 58, 1) 50%);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 320px auto, 100% 61%;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     background-image: none;
@@ -46,6 +56,23 @@
       rgba(104, 183, 56, 0.85),
       rgba(104, 183, 56, 0.85)),
       url("../img/promo-img-cat-desktop.jpg");
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--bright-color);
+  }
+
+  @media (min-resolution: 2dppx) {
+    position: absolute;
+    width: 50%;
+    height: 694px;
+    background-image: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)),
+      url("../img/promo-img-cat-desktop@2x.jpg");
     background-position: end;
     background-repeat: no-repeat;
     background-size: cover;
