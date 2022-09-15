@@ -1,7 +1,7 @@
 // Глобальные стили
 :root {
   // Шрифты сайта
-  --main-font: "Oswald", sans-serif;
+  --main-font: "Oswald", "Arial", sans-serif;
   --additional-font: "Arial", "Helvetica", sans-serif;
 
   // Кастомные своийства цветов сайт
@@ -16,9 +16,4 @@
   // Отступы заголовков
   --content-width: 1220px;
   --magic-indent: calc(50% - var(--content-width) / 2 - 40px);
-}
-
-.page__body {
-  min-width: 320px;
-  box-sizing: border-box;
 }

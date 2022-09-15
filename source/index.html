@@ -27,14 +27,13 @@
           </picture>
           <img class="nav__img nav__img--text" src="img/logo-img/logo-text.svg" width="101" height="18" alt="Cat Energy">
         </a>
-        <div class="nav__toggle">
+        <div class="nav__toggle nav__toggle--no-js">
           <span class="nav__line nav__line--first"></span>
           <span class="nav__line nav__line--second"></span>
           <span class="nav__line nav__line--last"></span>
         </div>
       </div>
-      <div class="nav__block"></div>
-        <ul class="nav__list">
+        <ul class="nav__list nav__list--no-js">
           <li class="nav__item"><a class="nav__link nav__link--current nav__link--desktop nav__link--current-desktop" href="#">Главная</a></li>
           <li class="nav__item"><a class="nav__link nav__link--desktop" href="catalog.html">Каталог&nbsp;продукции</a></li>
           <li class="nav__item"><a class="nav__link nav__link--desktop" href="form.html">Подбор&nbsp;программы</a></li>
@@ -136,10 +135,10 @@
         <div class="slider">
             <div class="slider__container-img slider__container-img--before">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-fat-desktop.png">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat-desktop.webp">
-                <source type="image/webp" srcset="img/cat-fat.webp">
-                <img class="slider-img slider__image-before" src="img/cat-fat.png" alt="Толстый кот" width="280" height="256"/>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat-desktop.webp, img/cat-fat-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-fat.webp, img/cat-fat@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/cat-fat-desktop.png, img/cat-fat-desktop@2x.png 2x">
+                <img class="slider-img slider__image-before" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" alt="Толстый кот" width="280" height="256"/>
               </picture>
             </div>
             <button class="slider__button" type="button"><span class="visually-hidden">Бегунок слайдера</span>
@@ -149,10 +148,10 @@
             </button>
             <div class="slider__container-img slider__container-img--after">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-skinny-desktop.png">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-skinny-desktop.webp">
-                <source type="image/webp" srcset="img/cat-skinny.webp">
-                <img class="slider-img slider__image-after" src="img/cat-skinny.png" alt="Худой кот" width="280" height="256"/>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-skinny-desktop.webp, img/cat-skinny-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-skinny.webp, img/cat-skinny@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/cat-skinny-desktop.png, img/cat-skinny-desktop@2x.png 2x">
+                <img class="slider-img slider__image-after" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" alt="Худой кот" width="280" height="256"/>
               </picture>
             </div>
         </div>

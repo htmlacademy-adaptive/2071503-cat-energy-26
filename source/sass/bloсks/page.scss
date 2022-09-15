@@ -5,6 +5,9 @@
 .page__body {
   height: 100%;
   margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   box-sizing: border-box;
   position: relative;
+  min-width: 320px;
 }

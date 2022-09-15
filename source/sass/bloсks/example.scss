@@ -137,7 +137,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     margin-top: 7px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -160,7 +160,6 @@
   @media (min-width: $tablet-width) {
     background-color: var(--bg-color-light);
     font-size: 14px;
-    padding: 0, 5px;
     max-width: 142px;
     margin-bottom: -8px;
   }
